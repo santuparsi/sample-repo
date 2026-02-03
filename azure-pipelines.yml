@@ -1,7 +1,14 @@
 trigger: none
 
 pool:
-  name: Default   # must match agent pool name
+  name: Default
 
 steps:
-- script: echo "Hello World from Self-Hosted Agent"
+- task: PowerShell@2
+  displayName: "Hello World (Safe Mode)"
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Output "Hello World from Self-Hosted Agent"
+    pwsh: false
+    failOnStderr: true
