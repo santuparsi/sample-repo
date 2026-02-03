@@ -4,10 +4,8 @@ pool:
   name: Default
 
 steps:
-- task: PowerShell@2
-  displayName: "Hello World"
+- task: CmdLine@2
+  displayName: "Hello World (CMD – Safe)"
   inputs:
-    targetType: inline
     script: |
-      Write-Host "Hello World from Azure Pipeline"
-    pwsh: false
+      echo Hello World from Azure Pipeline
