@@ -5,10 +5,9 @@ pool:
 
 steps:
 - task: PowerShell@2
-  displayName: "Hello World (Safe Mode)"
+  displayName: "Hello World"
   inputs:
-    targetType: 'inline'
+    targetType: inline
     script: |
-      Write-Output "Hello World from Self-Hosted Agent"
+      Write-Host "Hello World from Azure Pipeline"
     pwsh: false
-    failOnStderr: true
