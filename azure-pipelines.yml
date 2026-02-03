@@ -1,6 +1,7 @@
+trigger: none
+
 pool:
-  vmImage: ubuntu-latest
+  name: Default   # must match agent pool name
 
 steps:
-- script: echo "Hello World from Azure Pipeline"
-
+- script: echo "Hello World from Self-Hosted Agent"
