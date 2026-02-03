@@ -1,7 +1,7 @@
 trigger: none
 
 pool:
-  name: Default
+  name: Default1
 
 steps:
 - task: CmdLine@2
