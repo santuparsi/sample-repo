@@ -1,11 +1,5 @@
-trigger: none
-
 pool:
-  name: Default
+  name: DemoPool
 
 steps:
-- task: CmdLine@2
-  displayName: "Hello World (CMD – Safe)"
-  inputs:
-    script: |
-      echo Hello World from Azure Pipeline
+- script: echo "Hello from Demo Pipeline"
